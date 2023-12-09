@@ -14,8 +14,21 @@ import java.util.List;
 
 public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
     private final String CREATE_DEVELOPER = "insert into developers(first_name, last_name) values (?,?)";
-    private final String GET_DEVELOPER_BY_ID = " SELECT d.id, d.first_name, d.last_name, d.status, " + "s.name as skill_name, sp.name as specialty_name " + "FROM developers d " + "LEFT JOIN developer_skills ds ON d.id = ds.developer_id " + "LEFT JOIN skills s ON ds.skill_id = s.id " + "LEFT JOIN specialties sp ON d.specialty_id = sp.id; ";
-    private final String GET_ALL_DEVELOPERS = " SELECT d.id, d.first_name, d.last_name, d.status, " + "s.name as skill_name, sp.name as specialty_name " + "FROM developers d " + "LEFT JOIN developer_skills ds ON d.id = ds.developer_id " + "LEFT JOIN skills s ON ds.skill_id = s.id " + "LEFT JOIN specialties sp ON d.specialty_id = sp.id; ";
+    private final String GET_DEVELOPER_BY_ID =
+            "SELECT d.id, d.first_name, d.last_name,d.specialty" +
+                    "s.name as skill_name" +
+                    "FROM developers d" +
+                    "LEFT JOIN developer_skills ds ON d.id = ds.developer_id" +
+                    "LEFT JOIN skills s ON ds.skill_id = s.id" +
+                    "LEFT JOIN specialties sp ON sp.name = d.specialty" +
+                    "where d.id = ?";
+    private final String GET_ALL_DEVELOPERS =
+            "SELECT d.id, d.first_name, d.last_name,d.specialty" +
+                    "s.name as skill_name" +
+                    "FROM developers d" +
+                    "LEFT JOIN developer_skills ds ON d.id = ds.developer_id" +
+                    "LEFT JOIN skills s ON ds.skill_id = s.id" +
+                    "LEFT JOIN specialties sp ON sp.name = d.specialty";
     private final String UPDATE_DEVELOPER_BY_ID = "update developers set (first_name, last_name) values (?,?) where id ?";
     private final String DELETE_DEVELOPER_BY_ID = "delete from developers where id = ?";
 
@@ -29,7 +42,6 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
     @Override
     public Developer create(Developer developer) {
         try (PreparedStatement preparedStatement =
-//                     DBUtils.getPreparedStatement(CREATE_DEVELOPER)) {
                      DBUtils.getPreparedStatementWithKeys(CREATE_DEVELOPER)) {
             preparedStatement.setString(1, developer.getFirstName());
             preparedStatement.setString(2, developer.getLastName());
@@ -55,7 +67,7 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
     public Developer get(Long id) {
         try (PreparedStatement preparedStatement = DBUtils.getPreparedStatement(GET_DEVELOPER_BY_ID)) {
             preparedStatement.setLong(1, id);
-            ResultSet resultSet = preparedStatement.executeQuery();
+            ResultSet resultSet = preparedStatement.executeQuery(); //здесь не отрабатывает
             return mapResultSettoDeveloper(resultSet);
         } catch (SQLException e) {
             return null;
@@ -78,7 +90,7 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
                 Skill skill = new Skill(skillId, skillName);
                 List<Skill> skills = listDevelopers.get(developerId.intValue()).getSkills();
                 //SPECIALTY
-                Long specialtyId = resultSet.getLong("specialty_id");
+                Long specialtyId = resultSet.getLong("id");
                 String specialtyName = resultSet.getString("specialty_name");
                 Specialty specialty = new Specialty(specialtyId, specialtyName);
 
