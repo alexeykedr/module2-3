@@ -9,18 +9,19 @@ CREATE TABLE IF NOT EXISTS developers
     id           BIGSERIAL PRIMARY KEY,
     first_name   VARCHAR(128)  NOT NULL,
     last_name    VARCHAR(128) NOT NULL,
-    specialty VARCHAR(128)
+    specialty_id BIGINT,
+    FOREIGN KEY (specialty_id) REFERENCES specialties (id)
     );
 
 CREATE TABLE IF NOT EXISTS skills
 (
-    id   BIGSERIAL PRIMARY KEY,
+    id   BIGSERIAL primary key ,
     name VARCHAR(128) NOT NULL
     );
 
 CREATE TABLE IF NOT EXISTS developer_skills
 (
-    developer_id BIGSERIAL PRIMARY KEY,
+    developer_id BIGSERIAL,
     skill_id BIGSERIAL,
 
     FOREIGN KEY (developer_id) REFERENCES developers(id),
@@ -31,13 +32,14 @@ CREATE TABLE IF NOT EXISTS developer_skills
 INSERT INTO specialties (name)
 VALUES ('developer');
 
-INSERT INTO developers (first_name, last_name, specialty)
-VALUES ('Petr', 'Petrov', 'java');
+INSERT INTO developers (first_name, last_name, specialty_id)
+VALUES ('Petr', 'Petrov', 1);
 
-
-SELECT d.id, d.first_name, d.last_name,d.specialty,
-       s.name as skill_name
+--=============================
+SELECT d.id, d.first_name, d.last_name,sp.id as spec_id, sp.name as spec_name,
+       s.id as skill_id, s.name as skill_name
 FROM developers d
          LEFT JOIN developer_skills ds ON d.id = ds.developer_id
          LEFT JOIN skills s ON ds.skill_id = s.id
-         LEFT JOIN specialties sp ON sp.name = d.specialty;
+         LEFT JOIN specialties sp ON sp.id = d.specialty_id
+where d.id = 1;
