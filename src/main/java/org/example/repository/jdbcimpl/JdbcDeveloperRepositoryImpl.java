@@ -3,6 +3,7 @@ package org.example.repository.jdbcimpl;
 import org.example.model.Developer;
 import org.example.model.Skill;
 import org.example.model.Specialty;
+import org.example.model.Status;
 import org.example.repository.DeveloperRepository;
 import org.example.util.DBUtils;
 
@@ -14,8 +15,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
-    private final String CREATE_DEVELOPER = "insert into developers(first_name, last_name) values (?,?)";
+    private final String CREATE_DEVELOPER = "insert into developers(first_name, last_name, status) values (?,?,?)";
     private final String GET_DEVELOPER_BY_ID =
             "SELECT d.id, d.first_name, d.last_name,sp.id as spec_id, sp.name as spec_name," +
                     "       s.id as skill_id, s.name as skill_name " +
@@ -32,11 +34,11 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
                     "         LEFT JOIN skills s ON ds.skill_id = s.id" +
                     "         LEFT JOIN specialties sp ON sp.id = d.specialty_id";
     private final String UPDATE_DEVELOPER_BY_ID = "update developers set (first_name, last_name) values (?,?) where id ?";
-    private final String DELETE_DEVELOPER_BY_ID = "delete from developers where id = ?";
+    private final String DELETE_DEVELOPER_BY_ID = "update  developers set status = ? where id = ?";
 
-//натягивать сложнейший resultSet через мапу
+
     private Map<Long, Developer> mapResultSettoDeveloper(ResultSet resultSet) throws SQLException {
-        Map<Long, Developer> mapFromRs = new HashMap<>();
+            Map<Long, Developer> mapFromRs = new HashMap<>();
 
             while (resultSet.next()) {
                 //DEVELOPERS
@@ -48,15 +50,16 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
                 String skillName = resultSet.getString("skill_name");
                 Skill skill = new Skill((long)skillId, skillName);
                 List<Skill> skills = new ArrayList<>();
-                skills.add((int)skillId - 1,skill); // использую - 1 чтобы избежать IOBEx
-                //SPECIALTY
-                Long specialtyId = resultSet.getLong("id");
-                String specialtyName = resultSet.getString("specialty_name");
-                Specialty specialty = new Specialty(specialtyId, specialtyName);
 
-                Developer developer = new Developer(developerId, firstName, lastName, skills, specialty, null);
+                skills.add(skill);
+                //SPECIALTY
+                Long specialtyId = resultSet.getLong("spec_id");
+                String specialtyName = resultSet.getString("spec_name");
+                Specialty specialty = new Specialty(specialtyId, specialtyName);
+                //TODO: check hard set status into get method
+                Developer developer = new Developer(developerId, firstName, lastName, skills, specialty, Status.ACTIVE);
                 mapFromRs.put(developerId,developer);
-            }
+    }
 
         return mapFromRs;
 
@@ -69,6 +72,7 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
                      DBUtils.getPreparedStatementWithKeys(CREATE_DEVELOPER)) {
             preparedStatement.setString(1, developer.getFirstName());
             preparedStatement.setString(2, developer.getLastName());
+            preparedStatement.setString(3, developer.getStatus().toString());
             if (preparedStatement.executeUpdate() == 0) {
                 throw new SQLException("Failed to create developer");
             }
@@ -91,7 +95,7 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
     public Developer get(Long id) {
         try (PreparedStatement preparedStatement = DBUtils.getPreparedStatement(GET_DEVELOPER_BY_ID)) {
             preparedStatement.setLong(1, id);
-            ResultSet resultSet = preparedStatement.executeQuery(); //здесь не отрабатывает
+            ResultSet resultSet = preparedStatement.executeQuery();
             return (mapResultSettoDeveloper(resultSet)).get(id);
         } catch (SQLException e) {
             return null;
@@ -99,10 +103,11 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
     }
 
     @Override
+
     public List<Developer> getAll() {
         try (PreparedStatement preparedStatement = DBUtils.getPreparedStatement(GET_ALL_DEVELOPERS)) {
             ResultSet resultSet = preparedStatement.executeQuery();
-            List<Developer> listDevelopers = new ArrayList<>(mapResultSettoDeveloper(resultSet).values());
+                  List<Developer> listDevelopers = new ArrayList<>(mapResultSettoDeveloper(resultSet).values());
 
             return  listDevelopers;
         } catch (SQLException e) {
@@ -125,9 +130,12 @@ public class JdbcDeveloperRepositoryImpl implements DeveloperRepository {
 
     @Override
     public void delete(Long id) {
-        try (PreparedStatement preparedStatement = DBUtils.getPreparedStatement(DELETE_DEVELOPER_BY_ID)) {
-            preparedStatement.setLong(1, id);
+        try (PreparedStatement preparedStatement =
+                     DBUtils.getPreparedStatement(DELETE_DEVELOPER_BY_ID)) {
+            preparedStatement.setString(1, Status.DELETED.toString());
+            preparedStatement.setLong(2, id);
             preparedStatement.executeUpdate();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

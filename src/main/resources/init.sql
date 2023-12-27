@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS developers
     id           BIGSERIAL PRIMARY KEY,
     first_name   VARCHAR(128)  NOT NULL,
     last_name    VARCHAR(128) NOT NULL,
+    status VARCHAR(64) not NULL,
     specialty_id BIGINT,
     FOREIGN KEY (specialty_id) REFERENCES specialties (id)
     );
@@ -30,16 +31,36 @@ CREATE TABLE IF NOT EXISTS developer_skills
     );
 
 INSERT INTO specialties (name)
-VALUES ('developer');
+VALUES ('developer'),
+       ('employee');
 
-INSERT INTO developers (first_name, last_name, specialty_id)
-VALUES ('Petr', 'Petrov', 1);
+INSERT INTO developers (first_name, last_name, specialty_id, status)
+VALUES ('Petr', 'Petrov', 1, 'Active' );
+
+INSERT INTO skills(name)
+values ('java'),
+       ('sql');
+
+insert into developer_skills(developer_id,skill_id)
+values (1,1),
+       (1,2);
 
 --=============================
-SELECT d.id, d.first_name, d.last_name,sp.id as spec_id, sp.name as spec_name,
-       s.id as skill_id, s.name as skill_name
+
+SELECT d.id,
+       d.first_name,
+       d.last_name,
+       sp.id   as spec_id,
+       sp.name as spec_name,
+       s.id    as skill_id,
+       s.name  as skill_name
 FROM developers d
          LEFT JOIN developer_skills ds ON d.id = ds.developer_id
          LEFT JOIN skills s ON ds.skill_id = s.id
-         LEFT JOIN specialties sp ON sp.id = d.specialty_id
-where d.id = 1;
+         LEFT JOIN specialties sp ON sp.id = d.specialty_id;
+
+
+
+update  developers
+set status = 'inactive'
+where id = 1;

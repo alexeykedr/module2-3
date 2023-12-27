@@ -76,7 +76,12 @@ public class Developer {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Developer developer)) return false;
-        return Objects.equals(getId(), developer.getId()) && Objects.equals(getFirstName(), developer.getFirstName()) && Objects.equals(getLastName(), developer.getLastName()) && Objects.equals(getSkills(), developer.getSkills()) && Objects.equals(getSpecialty(), developer.getSpecialty()) && getStatus() == developer.getStatus();
+        return Objects.equals(getId(), developer.getId()) &&
+                Objects.equals(getFirstName(), developer.getFirstName()) &&
+                Objects.equals(getLastName(), developer.getLastName()) &&
+                Objects.equals(getSkills(), developer.getSkills()) &&
+                Objects.equals(getSpecialty(), developer.getSpecialty()) &&
+                getStatus() == developer.getStatus();
     }
 
     @Override

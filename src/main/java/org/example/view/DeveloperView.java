@@ -2,6 +2,7 @@ package org.example.view;
 
 import org.example.controller.DeveloperController;
 import org.example.model.Developer;
+import org.example.model.Status;
 
 import java.util.Scanner;
 
@@ -31,6 +32,7 @@ public class DeveloperView implements Menu {
                     developer.setFirstName(scanner.next());
                     System.out.println("Enter new last name");
                     developer.setLastName(scanner.next());
+                    developer.setStatus(Status.ACTIVE);
                     developerController.create(developer);
                     System.out.println("Developer is created - View");
                     break;
