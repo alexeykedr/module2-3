@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b1bb009-cac4-405b-a08c-797418ecfa59" name="Changes" comment="add 1 test JdbcDeveloperRepositoryImplTest" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2Wfmc26HsTOSrHJBPz2tl328Bwl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Plugins Suggestion&quot;: &quot;Plugin suggestions available&quot;,
+    &quot;Notification.DoNotAsk-Plugins Suggestion&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kulak/YandexDisk/Загрузки/IdeaProjects/module2-2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.debugger.capture&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ],
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ],
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
+    ]
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="tzen" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.JdbcDeveloperRepositoryImplTest.create (1)">
+    <configuration name="DeveloperControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.DeveloperControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcDeveloperRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="repository.jdbcimpl.JdbcDeveloperRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcDeveloperRepositoryImplTest.create (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="repository.jdbcimpl.JdbcDeveloperRepositoryImplTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcDeveloperRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="repository.jdbcimpl.JdbcDeveloperRepositoryImplTest" />
+      <option name="METHOD_NAME" value="create(org.example.model.Developer)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcDeveloperRepositoryImplTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="repository.jdbcimpl.JdbcDeveloperRepositoryImplTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JdbcDeveloperRepositoryImplTest.create (1)" />
+        <item itemvalue="JUnit.JdbcDeveloperRepositoryImplTest.create" />
+        <item itemvalue="JUnit.JdbcDeveloperRepositoryImplTest.testCreate" />
+        <item itemvalue="JUnit.JdbcDeveloperRepositoryImplTest" />
+        <item itemvalue="JUnit.DeveloperControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b1bb009-cac4-405b-a08c-797418ecfa59" name="Changes" comment="" />
+      <created>1697086223175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697086223175</updated>
+      <workItem from="1697086224198" duration="1005000" />
+      <workItem from="1697132090587" duration="10000" />
+      <workItem from="1697171691096" duration="45000" />
+      <workItem from="1697171748143" duration="10321000" />
+      <workItem from="1697215199336" duration="162000" />
+      <workItem from="1697258172120" duration="4958000" />
+      <workItem from="1697343712576" duration="13140000" />
+      <workItem from="1697376343494" duration="2426000" />
+      <workItem from="1697386514414" duration="28000" />
+      <workItem from="1697391325700" duration="20000" />
+      <workItem from="1697391358375" duration="9596000" />
+      <workItem from="1697465638123" duration="127000" />
+      <workItem from="1697516266354" duration="2862000" />
+      <workItem from="1697608131452" duration="13385000" />
+      <workItem from="1697776714942" duration="4387000" />
+      <workItem from="1697790855020" duration="51000" />
+      <workItem from="1697821697171" duration="5270000" />
+      <workItem from="1697947675914" duration="4493000" />
+      <workItem from="1698040444385" duration="5781000" />
+      <workItem from="1698057308744" duration="228000" />
+      <workItem from="1698125721656" duration="4070000" />
+      <workItem from="1698207124992" duration="10828000" />
+      <workItem from="1698248013901" duration="77000" />
+      <workItem from="1698248103301" duration="4344000" />
+      <workItem from="1698293551058" duration="4244000" />
+      <workItem from="1698320710790" duration="134000" />
+      <workItem from="1698320861227" duration="11749000" />
+      <workItem from="1698340625005" duration="2975000" />
+      <workItem from="1698984718393" duration="601000" />
+      <workItem from="1698985779781" duration="4511000" />
+      <workItem from="1699070549823" duration="701000" />
+      <workItem from="1699071267988" duration="3642000" />
+      <workItem from="1699089088479" duration="16717000" />
+      <workItem from="1699164337133" duration="12000" />
+      <workItem from="1699196049676" duration="1279000" />
+      <workItem from="1699243317751" duration="11302000" />
+      <workItem from="1699341024248" duration="56000" />
+      <workItem from="1699444418477" duration="12000" />
+      <workItem from="1699444442881" duration="6279000" />
+      <workItem from="1699520632906" duration="261000" />
+      <workItem from="1699599511894" duration="602000" />
+      <workItem from="1699600133003" duration="3588000" />
+      <workItem from="1699675796398" duration="7606000" />
+      <workItem from="1699772811986" duration="1256000" />
+      <workItem from="1699774228030" duration="308000" />
+      <workItem from="1699774548575" duration="4473000" />
+      <workItem from="1699803554778" duration="27000" />
+      <workItem from="1699803596567" duration="53000" />
+      <workItem from="1699803673742" duration="27000" />
+      <workItem from="1699849915168" duration="894000" />
+      <workItem from="1699860921278" duration="87000" />
+      <workItem from="1700152370676" duration="5000" />
+      <workItem from="1700152385587" duration="35000" />
+      <workItem from="1700152438373" duration="4737000" />
+      <workItem from="1700290571111" duration="4321000" />
+      <workItem from="1700296378807" duration="51000" />
+      <workItem from="1700296451153" duration="520000" />
+      <workItem from="1700296987154" duration="288000" />
+      <workItem from="1700297450575" duration="53000" />
+      <workItem from="1700297517139" duration="64000" />
+      <workItem from="1700297644621" duration="32000" />
+      <workItem from="1700298061141" duration="4986000" />
+      <workItem from="1700494849188" duration="3389000" />
+      <workItem from="1700498662051" duration="1250000" />
+      <workItem from="1700584780149" duration="1343000" />
+      <workItem from="1700842671039" duration="854000" />
+      <workItem from="1700888077485" duration="754000" />
+      <workItem from="1700892602244" duration="1979000" />
+      <workItem from="1700895011487" duration="2156000" />
+      <workItem from="1700898301568" duration="733000" />
+      <workItem from="1700913453991" duration="1310000" />
+      <workItem from="1701008610635" duration="2995000" />
+      <workItem from="1701012675157" duration="1502000" />
+      <workItem from="1701101819348" duration="80000" />
+      <workItem from="1701184582770" duration="790000" />
+      <workItem from="1701587365008" duration="26000" />
+      <workItem from="1701587410664" duration="3964000" />
+      <workItem from="1701592622764" duration="2013000" />
+      <workItem from="1702107239896" duration="28000" />
+      <workItem from="1702107284700" duration="1401000" />
+      <workItem from="1702188247901" duration="1998000" />
+      <workItem from="1702484157370" duration="1230000" />
+      <workItem from="1702631804655" duration="14000" />
+      <workItem from="1702700354350" duration="12442000" />
+      <workItem from="1702718155303" duration="267000" />
+      <workItem from="1702718439735" duration="7478000" />
+      <workItem from="1702825241611" duration="5744000" />
+      <workItem from="1702913443118" duration="167000" />
+      <workItem from="1702913629671" duration="3135000" />
+      <workItem from="1702916791647" duration="2062000" />
+      <workItem from="1702918981283" duration="613000" />
+      <workItem from="1703061904105" duration="689000" />
+      <workItem from="1703133891193" duration="646000" />
+      <workItem from="1703151554556" duration="2282000" />
+      <workItem from="1703509627852" duration="126000" />
+      <workItem from="1703509773438" duration="122000" />
+      <workItem from="1703563968927" duration="598000" />
+      <workItem from="1703675754471" duration="941000" />
+      <workItem from="1703688680086" duration="24000" />
+      <workItem from="1703691324764" duration="4334000" />
+      <workItem from="1703695678997" duration="904000" />
+    </task>
+    <task id="LOCAL-00001" summary="version  0.1">
+      <created>1702108080100</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702108080101</updated>
+    </task>
+    <task id="LOCAL-00002" summary="version  0.2">
+      <created>1702711891547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702711891547</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add 1 test JdbcDeveloperRepositoryImplTest">
+      <created>1703695959037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703695959037</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="homework: deleted the command that starts base container container.docker.bcknd.online/docker-run/op" />
+    <MESSAGE value="version  0.1" />
+    <MESSAGE value="version  0.2" />
+    <MESSAGE value="add 1 test JdbcDeveloperRepositoryImplTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 1 test JdbcDeveloperRepositoryImplTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
+    <option name="historyDtoById">
+      <map>
+        <entry key="2956cb">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/SkillRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/util/DBUtils.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                </list>
+              </option>
+              <option name="id" value="2956cb" />
+              <option name="initiateTms" value="1703257083744" />
+              <option name="request" value="как закрыть или открыть выпадающий список в обсидиан" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="В Obsidian, чтобы открыть или закрыть выпадающий список, вы можете использовать следующий синтаксис:&#10;&#10;```&#10;- [+] Заголовок списка&#10;  - Пункт 1&#10;  - Пункт 2&#10;  - Пункт 3&#10;```&#10;&#10;В этом примере `[+]` перед заголовком списка указывает, что список по умолчанию будет открытым. Если вы хотите, чтобы список был закрытым по умолчанию, замените `[+]` на `[-]`.&#10;&#10;Когда вы нажимаете на значок `[+]` или `[-]`, список будет открываться или закрываться в режиме редактирования Obsidian. При просмотре файла Markdown в режиме предварительного просмотра, список будет отображаться в виде раскрывающегося блока.&#10;&#10;Обратите внимание, что этот синтаксис работает только в режиме редактирования Obsidian и не будет работать в других Markdown-редакторах или просмотрщиках." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703257092032" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/util/DBUtils.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/SkillRepository.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="521112">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/test/java/repository/jdbcimpl/JdbcDeveloperRepositoryImplTest.java" />
+                </list>
+              </option>
+              <option name="id" value="521112" />
+              <option name="initiateTms" value="1703695744987" />
+              <option name="request" value="как убрать это сообщение в консоле&#10;C:\Users\Kulak\.jdks\corretto-17.0.9\bin\java.exe -ea -Didea.test.cyclic.buffer.size=1048576 &quot;-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3(2)\lib\idea_rt.jar=51182:C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3(2)\bin&quot; -Dfile.encoding=UTF-8 -classpath &quot;C:\Users\Kulak\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\Kulak\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Kulak\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3(2)\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3(2)\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3(2)\plugins\junit\lib\junit-rt.jar;C:\Users\Kulak\YandexDisk\Загрузки\IdeaProjects\module2-2\target\test-classes;C:\Users\Kulak\YandexDisk\Загрузки\IdeaProjects\module2-2\target\classes;C:\Users\Kulak\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Kulak\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Kulak\.m2\repository\org\mockito\mockito-core\5.6.0\mockito-core-5.6.0.jar;C:\Users\Kulak\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\Kulak\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\Kulak\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Kulak\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Kulak\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Kulak\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Kulak\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar&quot; com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 repository.jdbcimpl.JdbcDeveloperRepositoryImplTest,create&#10;OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Это сообщение в консоли является предупреждением от виртуальной машины Java (JVM) и связано с использованием параметра `-ea` (или `-enableassertions`), который включает проверку утверждений (assertions) во время выполнения тестов.&#10;&#10;Чтобы убрать это сообщение, вы можете отключить проверку утверждений в настройках запуска тестов. В IntelliJ IDEA вы можете сделать это следующим образом:&#10;&#10;1. Откройте настройки запуска тестов (например, щелкните правой кнопкой мыши на тестовом классе и выберите &quot;Edit 'ClassName.testCreate()'&quot;).&#10;2. В разделе &quot;VM options&quot; удалите параметр `-ea` или `-enableassertions`.&#10;3. Нажмите &quot;Apply&quot; или &quot;OK&quot;, чтобы сохранить изменения.&#10;&#10;После этого сообщение о предупреждении не должно больше появляться в консоли при запуске тестов." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703695750143" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/test/java/repository/jdbcimpl/JdbcDeveloperRepositoryImplTest.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="5a9c92">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                </list>
+              </option>
+              <option name="id" value="5a9c92" />
+              <option name="initiateTms" value="1703691489932" />
+              <option name="request" value="как реализовать в этом проекте юнит тесты" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Для реализации юнит-тестов в этом проекте вам потребуется использовать фреймворк для тестирования, такой как JUnit. Вот как вы можете начать:&#10;&#10;1. Добавьте зависимость JUnit в файл `pom.xml` вашего проекта, если она еще не добавлена:&#10;&#10;```xml&#10;&lt;dependency&gt;&#10;    &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;    &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;    &lt;version&gt;5.8.1&lt;/version&gt;&#10;    &lt;scope&gt;test&lt;/scope&gt;&#10;&lt;/dependency&gt;&#10;```&#10;&#10;2. Создайте новый пакет для юнит-тестов, например `src/test/java`, и создайте в нем классы тестов для каждого класса, который вы хотите протестировать.&#10;&#10;3. В каждом классе тестов импортируйте необходимые классы и методы JUnit:&#10;&#10;```java&#10;import org.junit.jupiter.api.Test;&#10;import static org.junit.jupiter.api.Assertions.*;&#10;```&#10;&#10;4. Напишите тестовые методы, которые проверяют различные аспекты функциональности вашего кода. Например, вы можете написать тестовый метод для метода `create` в классе `JdbcDeveloperRepositoryImpl`, чтобы проверить, что он правильно создает разработчика:&#10;&#10;```java&#10;@Test&#10;public void testCreate() {&#10;    // Создание объекта Developer для тестирования&#10;    Developer developer = new Developer(&quot;John&quot;, &quot;Doe&quot;, Status.ACTIVE);&#10;    &#10;    // Вызов метода create&#10;    Developer createdDeveloper = jdbcDeveloperRepository.create(developer);&#10;    &#10;    // Проверка, что созданный разработчик не равен null&#10;    assertNotNull(createdDeveloper);&#10;    &#10;    // Проверка, что созданный разработчик имеет правильные значения полей&#10;    assertEquals(&quot;John&quot;, createdDeveloper.getFirstName());&#10;    assertEquals(&quot;Doe&quot;, createdDeveloper.getLastName());&#10;    assertEquals(Status.ACTIVE, createdDeveloper.getStatus());&#10;}&#10;```&#10;&#10;5. Запустите тесты, используя вашу среду разработки или сборочную систему, такую как Maven или Gradle. Убедитесь, что все тесты проходят успешно.&#10;&#10;Обратите внимание, что это только пример, и вам может потребоваться написать больше тестов для покрытия всех аспектов вашего кода. Также обратите внимание, что для тестирования кода, который взаимодействует с базой данных, вам может потребоваться использовать фреймворк для тестирования базы данных, такой как H2 или Mockito, чтобы создать фиктивные объекты базы данных для тестирования." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703691501174" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="784512">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                </list>
+              </option>
+              <option name="id" value="784512" />
+              <option name="initiateTms" value="1703676062792" />
+              <option name="request" value="переведи на русский&#10;&#10;method createScreen should work with model instead null? (i need use ps instead cq, yes?)&#10;&#9;&#9;&#9;&#9;&#9;2. just launch project&#10;&#9;&#9;&#9;&#9;&#9;&#9;1. Where from I could get params for ProductSelection&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1. r u got it from confluence page?&#10;&#9;&#9;&#9;&#9;&#9;&#9;2. Is ProductSelection create manualy or automaticaly as same as interface ProductSelectionApi? " />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Метод `createScreen` должен работать с моделью вместо `null`? (Мне нужно использовать `ps` вместо `cq`, да?)&#10;&#9;&#9;&#9;&#9;&#9;2. Просто запустите проект.&#10;&#9;&#9;&#9;&#9;&#9;&#9;1. Откуда я могу получить параметры для `ProductSelection`?&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1. Вы их получили со страницы Confluence?&#10;&#9;&#9;&#9;&#9;&#9;&#9;2. `ProductSelection` создается вручную или автоматически, так же как и интерфейс `ProductSelectionApi`?" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703676066270" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="865fd7">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/test/java/controller/DeveloperControllerTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/controller/DeveloperController.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Developer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/DeveloperRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Specialty.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                </list>
+              </option>
+              <option name="id" value="865fd7" />
+              <option name="initiateTms" value="1703691767762" />
+              <option name="request" value="что здесь является сервисным слоем&#10;model - POJO клаcсы&#10;repository - классы, реализующие доступ к БД&#10;controller - обработка запросов от пользователя&#10;view - все данные, необходимые для работы с консолью&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="В данном проекте, сервисным слоем является пакет `repository`. В этом пакете находятся классы, которые реализуют доступ к базе данных и выполняют операции CRUD (создание, чтение, обновление, удаление) над объектами модели.&#10;&#10;Классы в пакете `repository` взаимодействуют с базой данных, выполняют SQL-запросы и возвращают объекты модели или результаты операций. Они предоставляют абстракцию для работы с базой данных и скрывают детали реализации от других слоев приложения, таких как контроллеры.&#10;&#10;Контроллеры (`controller`) в данном проекте отвечают за обработку запросов от пользователя и взаимодействие с сервисным слоем (`repository`). Они принимают запросы от пользователя, вызывают соответствующие методы в сервисном слое для выполнения операций над данными и возвращают результаты пользователю.&#10;&#10;Модель (`model`) представляет собой POJO (Plain Old Java Object) классы, которые представляют данные и бизнес-логику вашего приложения. Они содержат поля, геттеры и сеттеры для доступа к данным, а также другие методы, связанные с бизнес-логикой. Модель не содержит логики доступа к базе данных или обработки запросов, она просто представляет данные и поведение объектов вашего приложения.&#10;&#10;Пакет `view` в данном проекте содержит данные, необходимые для работы с консолью, такие как сообщения, меню и другие элементы пользовательского интерфейса. Он может содержать классы, отвечающие за отображение данных и взаимодействие с пользователем через консоль. Однако, в данном проекте, пакет `view` не является сервисным слоем, так как не содержит бизнес-логики или операций над данными." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703691777797" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/DeveloperRepository.java" />
+                  <option value="$PROJECT_DIR$/src/test/java/controller/DeveloperControllerTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/controller/DeveloperController.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Specialty.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Developer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="ac4672">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/SkillRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/util/DBUtils.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                </list>
+              </option>
+              <option name="id" value="ac4672" />
+              <option name="initiateTms" value="1703257145021" />
+              <option name="request" value="как закрыть или открыть выпадающий список в обсидиан с попомощью клавиатуры" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="В Obsidian, чтобы открыть или закрыть выпадающий список с помощью клавиатуры, вы можете использовать следующие сочетания клавиш:&#10;&#10;- Чтобы открыть или закрыть список, установите курсор на строке с заголовком списка и нажмите клавишу `Ctrl` + `Shift` + `]`.&#10;- Чтобы открыть или закрыть все списки в документе, нажмите клавишу `Ctrl` + `Shift` + `P`, затем начните вводить &quot;Toggle all foldings&quot; и выберите соответствующую команду.&#10;&#10;Эти сочетания клавиш позволяют быстро открывать и закрывать выпадающие списки без использования мыши." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703257149247" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/util/DBUtils.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/SkillRepository.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="b11083">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/test/java/controller/DeveloperControllerTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/controller/DeveloperController.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Developer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/DeveloperRepository.java" />
+                </list>
+              </option>
+              <option name="id" value="b11083" />
+              <option name="initiateTms" value="1703693531287" />
+              <option name="request" value="что вернуть в .thenReturn() если проверяемый метод имеет тип void&#10;Mockito.when(mockDeveloperRepository.create(testDeveloper)).thenReturn() " />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Если проверяемый метод имеет тип `void`, то в методе `thenReturn()` вы можете использовать `Mockito.doNothing()` для указания, что ничего не должно происходить при вызове этого метода. Вот пример:&#10;&#10;```java&#10;Mockito.doNothing().when(mockDeveloperRepository).create(testDeveloper);&#10;```&#10;&#10;Этот код говорит Mockito, что при вызове метода `create()` с аргументом `testDeveloper` ничего не должно происходить.&#10;&#10;Обратите внимание, что в данном случае нет необходимости использовать `thenReturn()`, так как метод `create()` возвращает `void`. Мы просто указываем Mockito, что ничего не должно происходить при вызове этого метода." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703693533925" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/DeveloperRepository.java" />
+                  <option value="$PROJECT_DIR$/src/test/java/controller/DeveloperControllerTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/controller/DeveloperController.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Specialty.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Developer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="b6faf4">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/test/java/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Developer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/DeveloperRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Specialty.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                </list>
+              </option>
+              <option name="id" value="b6faf4" />
+              <option name="initiateTms" value="1703694411430" />
+              <option name="request" value="перепиши этот тест чтобы работало&#10;import org.mockito.InjectMocks;&#10;import org.mockito.Mock;&#10;import org.mockito.Mockito;&#10;&#10;import java.util.List;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.junit.jupiter.api.Assertions.assertNotNull;&#10;&#10;public class JdbcDeveloperRepositoryImpl {&#10;    @Mock&#10;    DeveloperRepository mockRepository = Mockito.mock(DeveloperRepository.class);&#10;&#10;    @InjectMocks&#10;    private DeveloperRepository mockDeveloperRepository;&#10;    private Developer testDeveloper;&#10;    private List&lt;Developer&gt; testDevelopers;&#10;&#10;    @BeforeEach&#10;    void setUp() throws Exception {&#10;        testDeveloper = new Developer();&#10;        testDevelopers = List.of(testDeveloper);&#10;    }&#10;&#10;    @Test&#10;    public void create(Developer testDeveloper) throws Exception {&#10;&#10;        Mockito.when(mockDeveloperRepository.create(testDeveloper)).thenReturn(testDeveloper);&#10;        assertNotNull(testDeveloper);&#10;        assertEquals(Status.ACTIVE, testDeveloper.getStatus());&#10;    }&#10;}&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="import org.junit.jupiter.api.BeforeEach;&#10;import org.junit.jupiter.api.Test;&#10;import org.mockito.InjectMocks;&#10;import org.mockito.Mock;&#10;import org.mockito.Mockito;&#10;&#10;import java.util.List;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.junit.jupiter.api.Assertions.assertNotNull;&#10;&#10;public class JdbcDeveloperRepositoryImplTest {&#10;    @Mock&#10;    DeveloperRepository mockRepository;&#10;&#10;    @InjectMocks&#10;    private JdbcDeveloperRepositoryImpl jdbcDeveloperRepository;&#10;&#10;    private Developer testDeveloper;&#10;    private List&lt;Developer&gt; testDevelopers;&#10;&#10;    @BeforeEach&#10;    void setUp() throws Exception {&#10;        testDeveloper = new Developer();&#10;        testDevelopers = List.of(testDeveloper);&#10;    }&#10;&#10;    @Test&#10;    public void testCreate() throws Exception {&#10;        Mockito.doNothing().when(mockRepository).create(testDeveloper);&#10;&#10;        jdbcDeveloperRepository.create(testDeveloper);&#10;&#10;        assertNotNull(testDeveloper);&#10;        assertEquals(Status.ACTIVE, testDeveloper.getStatus());&#10;    }&#10;}" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703694415382" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/GenericRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/DeveloperRepository.java" />
+                  <option value="$PROJECT_DIR$/src/test/java/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcDeveloperRepositoryImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Specialty.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Developer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/model/Skill.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="eb49b4">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                </list>
+              </option>
+              <option name="id" value="eb49b4" />
+              <option name="initiateTms" value="1703151599205" />
+              <option name="request" value="как  вставить раскрывающийся список в мд файл" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Чтобы вставить раскрывающийся список в файл с расширением `.md` (Markdown), вы можете использовать HTML-разметку. Вот пример того, как это можно сделать:&#10;&#10;```markdown&#10;&lt;details&gt;&#10;&lt;summary&gt;Заголовок списка&lt;/summary&gt;&#10;&#10;- Пункт 1&#10;- Пункт 2&#10;- Пункт 3&#10;&#10;&lt;/details&gt;&#10;```&#10;&#10;В этом примере `&lt;summary&gt;` используется для задания заголовка списка, а `&lt;details&gt;` оборачивает содержимое списка. При отображении веб-страницы или просмотре файла Markdown, список будет отображаться в виде раскрывающегося блока.&#10;&#10;Примечание: Не все Markdown-редакторы и просмотрщики поддерживают раскрывающиеся списки. Поэтому перед использованием убедитесь, что ваш редактор или просмотрщик поддерживает эту функцию." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703151605278" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="f8610b">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                </list>
+              </option>
+              <option name="id" value="f8610b" />
+              <option name="initiateTms" value="1703133927062" />
+              <option name="request" value="как добавить тесты в этот проект" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Чтобы добавить тесты в этот проект, вам потребуется создать новый файл с тестами и добавить соответствующие тестовые методы для класса `JdbcSkillRepositoryImpl`. Вот пример того, как это можно сделать:&#10;&#10;1. Создайте новый файл с именем `JdbcSkillRepositoryImplTest.java` в том же пакете `org.example.repository.jdbcimpl`.&#10;&#10;2. В новом файле добавьте следующий импорт:&#10;```java&#10;import org.junit.jupiter.api.Test;&#10;import static org.junit.jupiter.api.Assertions.*;&#10;```&#10;&#10;3. Создайте класс `JdbcSkillRepositoryImplTest` и добавьте аннотацию `@TestInstance(TestInstance.Lifecycle.PER_CLASS)` перед классом, чтобы использовать один экземпляр класса для всех тестовых методов.&#10;&#10;4. Добавьте поле `SkillRepository skillRepository` в класс `JdbcSkillRepositoryImplTest` и проинициализируйте его в методе `setUp` с помощью фиктивной реализации `SkillRepository`. Например:&#10;```java&#10;private SkillRepository skillRepository;&#10;&#10;@BeforeEach&#10;public void setUp() {&#10;    skillRepository = new JdbcSkillRepositoryImpl();&#10;}&#10;```&#10;&#10;5. Добавьте тестовые методы для каждого метода класса `JdbcSkillRepositoryImpl`. Например, для метода `create`:&#10;```java&#10;@Test&#10;public void testCreate() {&#10;    Skill skill = new Skill(&quot;Java&quot;);&#10;    Skill createdSkill = skillRepository.create(skill);&#10;    assertNotNull(createdSkill);&#10;    assertNotNull(createdSkill.getId());&#10;    assertEquals(skill.getName(), createdSkill.getName());&#10;}&#10;```&#10;&#10;6. Повторите шаг 5 для остальных методов класса `JdbcSkillRepositoryImpl`.&#10;&#10;7. Запустите тесты, чтобы убедиться, что они проходят успешно.&#10;&#10;Таким образом, вы добавите тесты для класса `JdbcSkillRepositoryImpl` и сможете проверить его функциональность." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703133934090" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/example/repository/jdbcimpl/JdbcSkillRepositoryImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="greeting">
+          <value>
+            <ChatHistoryModel>
+              <option name="id" value="greeting" />
+              <option name="initiateTms" value="1703133904735" />
+              <option name="request" value="" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="&#10;Hello, I am Machinet AI - context aware chat, which can help you with your daily programming routine. How can I help?" />
+              <option name="responseTms" value="1703133906643" />
+            </ChatHistoryModel>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

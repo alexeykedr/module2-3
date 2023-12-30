@@ -1,0 +1,116 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="1" author="AlexeyKedr">
+        <createTable tableName="specialties">
+            <column name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="AlexeyKedr">
+        <createTable tableName="developers">
+            <column name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="VARCHAR(64)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="specialty_id" type="BIGINT">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="developers"
+                                 baseColumnNames="specialty_id"
+                                 referencedTableName="specialties"
+                                 referencedColumnNames="id"
+                                 constraintName="fk_developers_specialties"/>
+    </changeSet>
+
+    <changeSet id="3" author="AlexeyKedr">
+        <createTable tableName="skills">
+            <column name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="4" author="AlexeyKedr">
+        <createTable tableName="developer_skills">
+            <column name="developer_id" type="BIGSERIAL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="skill_id" type="BIGSERIAL">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="developer_skills"
+                                 baseColumnNames="developer_id"
+                                 referencedTableName="developers"
+                                 referencedColumnNames="id"
+                                 constraintName="fk_developer_skills_developers"/>
+        <addForeignKeyConstraint baseTableName="developer_skills"
+                                 baseColumnNames="skill_id"
+                                 referencedTableName="skills"
+                                 referencedColumnNames="id"
+                                 constraintName="fk_developer_skills_skills"/>
+        <addUniqueConstraint constraintName="uk_developer_skills"
+                             tableName="developer_skills" columnNames="">
+
+        </addUniqueConstraint>
+    </changeSet>
+
+    <changeSet id="5" author="AlexeyKedr">
+        <insert tableName="specialties">
+            <column name="name" value="developer"/>
+        </insert>
+        <insert tableName="specialties">
+            <column name="name" value="employee"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="6" author="AlexeyKedr">
+        <insert tableName="developers">
+            <column name="first_name" value="Petr"/>
+            <column name="last_name" value="Petrov"/>
+            <column name="specialty_id" valueNumeric="1"/>
+            <column name="status" value="Active"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="7" author="AlexeyKedr">
+        <insert tableName="skills">
+            <column name="name" value="java"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="sql"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="8" author="AlexeyKedr">
+        <insert tableName="developer_skills">
+            <column name="developer_id" valueNumeric="1"/>
+            <column name="skill_id" valueNumeric="1"/>
+        </insert>
+        <insert tableName="developer_skills">
+            <column name="developer_id" valueNumeric="1"/>
+            <column name="skill_id" valueNumeric="2"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
