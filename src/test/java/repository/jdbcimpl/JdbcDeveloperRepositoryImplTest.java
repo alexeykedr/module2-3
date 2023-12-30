@@ -13,6 +13,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.anyLong;
 
 public class JdbcDeveloperRepositoryImplTest {
     @Mock
@@ -36,13 +37,26 @@ public class JdbcDeveloperRepositoryImplTest {
     }
 
     @Test
-    public void create() throws Exception {
+    public void create() {
 
         Mockito.when(mockRepository.create(testDeveloper)).thenReturn(testDeveloper);
         assertNotNull(testDeveloper);
         assertEquals(Status.ACTIVE, testDeveloper.getStatus());
 
     }
+
+
+    @Test
+    public void get() {
+        Mockito.when(mockRepository.get(anyLong())).thenReturn(testDeveloper);
+        assertEquals(Status.ACTIVE, testDeveloper.getStatus());
+        assertEquals("iv",testDeveloper.getFirstName());
+        assertEquals("inov",testDeveloper.getLastName());
+        assertNotNull(testDeveloper);
+
+
+    }
 }
+
 
 
