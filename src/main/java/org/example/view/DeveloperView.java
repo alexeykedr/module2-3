@@ -1,8 +1,8 @@
 package org.example.view;
 
 import org.example.controller.DeveloperController;
-import org.example.model.Developer;
-import org.example.model.Status;
+import org.example.pojo.Developer;
+import org.example.pojo.Status;
 
 import java.util.Scanner;
 

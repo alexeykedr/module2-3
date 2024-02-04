@@ -1,7 +1,7 @@
 package org.example.view;
 
 import org.example.controller.SpecialtyController;
-import org.example.model.Specialty;
+import org.example.pojo.Specialty;
 
 import java.util.Scanner;
 

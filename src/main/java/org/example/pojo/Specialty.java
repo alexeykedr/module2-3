@@ -1,20 +1,27 @@
-package org.example.model;
+package org.example.pojo;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+@Entity
+@Table(name = "specialties")
 public class Specialty {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column
     private String name;
 
+
+    public Specialty() {
+    }
 
     public Specialty(Long id, String name) {
         this.id = id;
         this.name = name;
     }
 
-
-    public Specialty() {
-    }
 
     public Long getId() {
         return id;

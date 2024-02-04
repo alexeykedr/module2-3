@@ -1,14 +1,32 @@
-package org.example.model;
+package org.example.pojo;
 
+import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
+@Entity
+@Table(name = "developers")
 public class Developer {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column (name = "first_name")
     private String firstName;
+
+    @Column (name = "last_name")
     private String lastName;
+
+    @OneToMany
+    @JoinColumn (name = "developer_id")
     private List<Skill> skills;
+
+    @OneToOne
+    @JoinColumn(name = "specialty_id")
     private Specialty specialty;
+
+    @Column (name = "status")
     private Status status;
 
     public Developer() {
@@ -104,10 +122,4 @@ public class Developer {
     public boolean isNew() {
         return getId() == null;
     }
-
-    public void addSkill(Skill skill) {
-        skills.add(skill);
-    }
-
 }
-

@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS specialties
 (
     id   BIGSERIAL PRIMARY KEY,
     name VARCHAR(128) NOT NULL
-    );
+);
 
 CREATE TABLE IF NOT EXISTS developers
 (
@@ -12,13 +12,13 @@ CREATE TABLE IF NOT EXISTS developers
     status VARCHAR(64) not NULL,
     specialty_id BIGINT,
     FOREIGN KEY (specialty_id) REFERENCES specialties (id)
-    );
+);
 
 CREATE TABLE IF NOT EXISTS skills
 (
     id   BIGSERIAL primary key ,
     name VARCHAR(128) NOT NULL
-    );
+);
 
 CREATE TABLE IF NOT EXISTS developer_skills
 (
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS developer_skills
     FOREIGN KEY (developer_id) REFERENCES developers(id),
     FOREIGN KEY (skill_id) REFERENCES skills(id),
     UNIQUE (developer_id,skill_id)
-    );
+);
 
 INSERT INTO specialties (name)
 VALUES ('developer'),
@@ -58,9 +58,3 @@ FROM developers d
          LEFT JOIN developer_skills ds ON d.id = ds.developer_id
          LEFT JOIN skills s ON ds.skill_id = s.id
          LEFT JOIN specialties sp ON sp.id = d.specialty_id;
-
-
-
-update  developers
-set status = 'inactive'
-where id = 1;

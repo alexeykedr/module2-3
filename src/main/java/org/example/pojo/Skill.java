@@ -1,7 +1,16 @@
-package org.example.model;
+package org.example.pojo;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "skills")
 public class Skill {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column
     private String name;
 
     public Skill() {

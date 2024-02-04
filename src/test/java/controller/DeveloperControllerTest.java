@@ -1,7 +1,7 @@
 package controller;
 
 import org.example.controller.DeveloperController;
-import org.example.model.Developer;
+import org.example.pojo.Developer;
 import org.example.repository.DeveloperRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,7 +33,5 @@ public class DeveloperControllerTest {
         Mockito.when(mockRepository.get(anyLong())).thenReturn(testDeveloper);
         Developer developer = developerController.get(anyLong());
         assertNotNull(developer);
-
-
     }
 }

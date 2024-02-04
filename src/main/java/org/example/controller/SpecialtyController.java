@@ -1,13 +1,13 @@
 package org.example.controller;
 
-import org.example.model.Specialty;
+import org.example.pojo.Specialty;
 import org.example.repository.SpecialtyRepository;
-import org.example.repository.jdbcimpl.JdbcSpecialtyRepositoryImpl;
+import org.example.repository.impl.HibernateSpecialtyRepositoryImpl;
 
 import java.util.List;
 
 public class SpecialtyController {
-    SpecialtyRepository specialtyRepository = new JdbcSpecialtyRepositoryImpl();
+    SpecialtyRepository specialtyRepository = new HibernateSpecialtyRepositoryImpl();
 
     public void create(Specialty specialty) {
         specialtyRepository.create(specialty);

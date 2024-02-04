@@ -1,13 +1,13 @@
 package org.example.controller;
 
-import org.example.model.Skill;
+import org.example.pojo.Skill;
 import org.example.repository.SkillRepository;
-import org.example.repository.jdbcimpl.JdbcSkillRepositoryImpl;
+import org.example.repository.impl.HibernateSkillRepositoryImpl;
 
 import java.util.List;
 
 public class SkillController {
-    SkillRepository skillRepository = new JdbcSkillRepositoryImpl();
+    SkillRepository skillRepository = new HibernateSkillRepositoryImpl();
 
     public void create(Skill skill) {
         skillRepository.create(skill);

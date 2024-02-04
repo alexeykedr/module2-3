@@ -1,7 +1,7 @@
 package repository.jdbcimpl;
 
-import org.example.model.Developer;
-import org.example.model.Status;
+import org.example.pojo.Developer;
+import org.example.pojo.Status;
 import org.example.repository.DeveloperRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.anyLong;
 
-public class JdbcDeveloperRepositoryImplTest {
+public class HibernateDeveloperRepositoryImplTest {
     @Mock
     DeveloperRepository mockRepository = Mockito.mock(DeveloperRepository.class);
 

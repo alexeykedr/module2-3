@@ -1,7 +1,7 @@
 package org.example.view;
 
 import org.example.controller.SkillController;
-import org.example.model.Skill;
+import org.example.pojo.Skill;
 
 import java.util.Scanner;
 

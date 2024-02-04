@@ -1,8 +1,8 @@
 package org.example.controller;
 
-import org.example.model.Developer;
+import org.example.pojo.Developer;
 import org.example.repository.DeveloperRepository;
-import org.example.repository.jdbcimpl.JdbcDeveloperRepositoryImpl;
+import org.example.repository.impl.HibernateDeveloperRepositoryImpl;
 
 import java.util.List;
 
@@ -14,11 +14,12 @@ public class DeveloperController {
     }
 
     public DeveloperController() {
-        this.developerRepository = new JdbcDeveloperRepositoryImpl();
+        this.developerRepository = new HibernateDeveloperRepositoryImpl();
     }
 
     public void create(Developer developer) {
         developerRepository.create(developer);
+
     }
 
     public Developer get(Long id) {
