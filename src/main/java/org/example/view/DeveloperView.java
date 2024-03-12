@@ -53,6 +53,7 @@ public class DeveloperView implements Menu {
                     developerForUpdate.setFirstName(scanner.next());
                     System.out.println("Enter new last name");
                     developerForUpdate.setLastName(scanner.next());
+                    developerForUpdate.setStatus(Status.ACTIVE);
                     developerController.update(developerForUpdate);
                     System.out.println("Developer is updated");
                     break;

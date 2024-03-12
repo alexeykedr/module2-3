@@ -2,8 +2,8 @@ package org.example.pojo;
 
 public enum Status {
 
-    ACTIVE("Active"),
-    DELETED("Deleted");
+    ACTIVE("ACTIVE"),
+    DELETED("DELETED");
 
     private final String message;
 

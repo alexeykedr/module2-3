@@ -18,14 +18,18 @@ public class Developer {
     @Column (name = "last_name")
     private String lastName;
 
-    @OneToMany
-    @JoinColumn (name = "developer_id")
-    private List<Skill> skills;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "developer_skills",
+            joinColumns = { @JoinColumn(name = "developer_id") },
+            inverseJoinColumns = { @JoinColumn(name = "skill_id") }
+    )    private List<Skill> skills;
 
     @OneToOne
     @JoinColumn(name = "specialty_id")
     private Specialty specialty;
 
+    @Enumerated (EnumType.STRING)
     @Column (name = "status")
     private Status status;
 
